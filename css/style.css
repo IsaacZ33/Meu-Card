@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*variáveis de cor*/
+:root {
+    --cor-fundo: #08002b;
+    --cor-branco: #ffffff;
+    --cor-texto-primario: #009cb8;
+    --cor-texto-secundario: #aed1ff;
+    --cor-borda: #dcdfe3;
+    /* --cor-acento: #a7a7a7; */
+}
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* alinhamento do body  */
+body{
+    background-color: rgb(189, 189, 189);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* configuração geral do cartão */
+.card{
+    background-color: var(--cor-fundo);
+    width: 280px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/* ajuste de imagem  */
+.card_image{
+    width:100%;
+    object-fit: cover;
+}
+
+/* ajuste da "moldura" da imagem */
+.card_image-container{
+    width: 100%;
+}
+
+/* centraliza a divisão das informaçoes em baixo da imagem */
+.card_info{
+    padding: 1rem;
+}
+
+/* estilização do meu nome  */
+.card_name{
+    color:var(--cor-texto-primario);
+}
+
+/* estilização do título */
+.card_title{
+    color:var(--cor-texto-secundario);
+}
+
+/* ajusta os botões das redes sociais  */
+.card_social{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* configurações mais específicas dos botões */
+.card_social a{
+    margin-top: 10px;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: solid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    color:var(--cor-branco);
+}
+
+
+@media (max-width: 400px){
+    .card {
+        width:90%;
+    }
+}
